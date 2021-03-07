@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+</head>
+<body>
+    <h1>Add Form</h1>
+    <div>
+        <input type="text" id="a">
+    </div>
+    <div>
+        <input type="text" id="b">
+    </div>
+    <div id="result"></div>
+    <button id="add">Add</button>
+</div>
+<script>
+    document.querySelector("#add").onclick = function() {
+        let a = document.querySelector("#a").value 
+        let b = document.querySelector("#b").value
+    
+        document.querySelector("#result").textContent = a + b
+    }
+</script>
+
+</body>
+</html>
